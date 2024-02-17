@@ -12,8 +12,8 @@ resource "aws_security_group" "main" {
 
   ingress {
     description = "DOCDB"
-    from_port   = 2017
-    to_port     = 2017
+    from_port   = 27017
+    to_port     = 27017
     protocol    = "tcp"
     cidr_blocks = var.sg_ingress_cidr
 
